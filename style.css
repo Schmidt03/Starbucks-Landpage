@@ -1,0 +1,122 @@
+:root {
+    --verde-starbucks: #047044;
+    --preto: #000000;
+    --fonte-principal: 'Inter' , sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Header*/
+}
+body {
+    font-family: var(--fonte-principal);
+}
+html,body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+header {
+    height: 200px;
+    padding: 1.725em 0;
+}
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.cabecalho__logo {
+    width: 40%;
+    padding-top: .25em;
+}
+.cabecalho__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 100px;
+    width: 60%;
+    text-align: right;
+    padding-right: 1.75em;
+    
+}
+.cabecalho__menu__item {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: bold;
+}
+/*Circulo Verde*/
+section.sobre {
+    height: calc(100% - 200px); /*Pegando altura que resta sem header*/
+    position: relative;
+}
+.extras {
+    position: absolute;
+    bottom: -550px; /*Posicionando inicialmente um quadrado verde no canto direito bottom, aplicar primeiro bottom:0 e right:0 para posicionar quadrado*/
+    right: -700px;
+    width: 1350px; /*Tamanho do quadrado*/
+    height: 1100px;
+    border-radius: 50%;
+    background-color: var(--verde-starbucks)
+}
+.extras__imagem-cafe {
+    position: relative; /*Posicionando café no circulo*/
+    left: 90px;
+    bottom: 95px;
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 720px;
+    top: 170px;
+    row-gap: 0.1em;
+}
+.extras__social-media {
+    width: 13px;
+    margin-right: 2em;
+}
+.extras__facebook {
+    left: 3px;
+} 
+
+h1 {
+    font-family:var(--fonte-principal);
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.texto-sobre__Starbucks {
+    color: var(--verde-starbucks);
+    font-weight: 700;
+}
+.texto-sobre {
+    margin-top: 100px;
+}
+.texto-sobre__historia {
+    font-family: var(--fonte-principal);
+    font-weight: medium;
+    font-size: 17px;
+    margin-bottom: 2em;
+}
+.texto-sobre__botao {
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
+    background-color: var(--verde-starbucks);
+    padding: .7em 1.4em;
+    font-size: 15px;
+    font-weight: 600;
+}
+.thumb {
+    display: flex;
+    flex-grow: 6;
+    list-style-type: none; 
+    position: absolute;
+    column-gap: 3em;
+    margin-top: 10em;
+    margin-left: 33em;
+}
